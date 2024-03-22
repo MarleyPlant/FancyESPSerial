@@ -1,0 +1,61 @@
+{
+  "name": "FancyESPSerial",
+  "description": "This Library Provides A Number Of Tools to provide a TUI via ESP / Arduino Serial",
+  "gitPath": "",
+  "sections": [
+    "License",
+    "Brands",
+    "Custom",
+    "Shields"
+  ],
+  "sectionconfig": {
+    "License": {
+      "order": 0,
+      "data": {
+        "name": "Mozilla Public License 2.0",
+        "spdx_id": "MPL-2.0",
+        "url": "https://api.github.com/licenses/mpl-2.0",
+        "description": "Permissions of this weak copyleft license are conditioned on making available source code of licensed files and modifications of those files under the same license (or in certain cases, one of the GNU licenses). Copyright and license notices must be preserved. Contributors provide an express grant of patent rights. However, a larger work using the licensed work may be distributed under different terms and without source code for files added in the larger work.",
+        "file": "MPL-2.0.txt"
+      }
+    },
+    "Brands": {
+      "order": 1,
+      "data": [
+        "llanguages:.12",
+        "frameworks.4"
+      ]
+    },
+    "Custom": {
+      "order": 2,
+      "data": {}
+    },
+    "Shields": {
+      "GitHub commit activity": {
+        "name": "GitHub commit activity",
+        "pathParams": {
+          "interval": "w",
+          "user": "MarleyPlant",
+          "repo": "FancyESPSerial"
+        },
+        "queryParams": {
+          "style": "flat-square"
+        },
+        "url": "https://img.shields.io/github/commit-activity/:interval/:user/:repo"
+      },
+      "GitHub Release Date": {
+        "name": "GitHub Release Date",
+        "pathParams": {
+          "variant": "release-date",
+          "user": "MarleyPlant",
+          "repo": "FancyESPSerial"
+        },
+        "queryParams": {
+          "display_date": "published_at",
+          "style": "flat-square"
+        },
+        "url": "https://img.shields.io/github/:variant/:user/:repo"
+      }
+    }
+  }
+}
