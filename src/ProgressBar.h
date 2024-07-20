@@ -6,6 +6,10 @@ public:
   ProgressBar(int length);
 
   void start() {
+    if(length == 0) {
+      return;
+    }
+
     Serial.print("|");
     for (int i = 0; i < length; i++) {
       Serial.print('.');  // print empty 'progress bar' of length
@@ -13,7 +17,6 @@ public:
     Serial.println("|");
 
     Serial.print("|");
-    progress++;
   }
 
   void step() {
@@ -32,6 +35,8 @@ public:
       for (int i = 0; i <= numStepsLeft; i++) {
         step();
       }
+    } else if (progress == length) {
+      Serial.println("|");
     }
   }
 };
